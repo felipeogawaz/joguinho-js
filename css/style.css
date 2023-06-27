@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: url(../img/fundo2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-color: #627130;
+    background-repeat: no-repeat;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+    
+#fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#er{
+    position: relative;
+    top: 200px;
+    width: 100px;
+    left: 200px;
+}
+
+
+
+
+.hp {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.boss {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(75%);
+}
+
+#joy{
+    margin-left: 5%;
+    margin-top: 30%;
+    width: 0%;
+    display: flex;
+}
+
+#Cima,#Baixo,#Direita,#Esquerda{
+    padding: 10px;
+    background-color: #2e9b66;
+    border-radius: 7px;
+    width: 60px;
+    height: 40px;
+    position: relative;
+}
+
+.Hollow{
+    background-image: url(../img/spr-f.png);
+    width: 110px;
+    height: 160px;  
+    position: relative;
+    left: 300px;
+    top: 600px;
+}
+
+.fundo1{
+    left: 675px;
+    top: 370px;
+    position: absolute;
+}
+
+.fundo2{
+    left: 440px;
+    top: 350px;
+    position: absolute;
+}
+
+
+.anima-div{
+    background: url(../img/1k_preview_rev_1.png) -0px -0px;
+    width: 120px;
+    height: 194px;
+    animation: anima-sprite 1s steps(3) infinite;
+}
+
+@keyframes anima-sprite{
+    100%{ background-position-x: -400px;}
+}
